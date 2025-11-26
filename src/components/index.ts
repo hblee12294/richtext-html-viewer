@@ -1,3 +1,4 @@
-export { Highlighter } from './Highlighter/Highlighter'
-export { Button } from './Button/Button'
-export { CodeEditor } from './CodeEditor/CodeEditor'
+export * from './CodeEditor/CodeEditor'
+export * from './Highlighter/Highlighter'
+export * from './Button/Button'
+export * from './Toolbar/Toolbar'
