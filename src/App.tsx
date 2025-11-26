@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState, useCallback } from 'react'
+import React, { useRef, useEffect, useState, useCallback } from 'react'
 import Quill from 'quill'
 
 import './App.css'
@@ -135,10 +135,7 @@ function App() {
 
       <div className="display" style={{ width: `${100 - leftWidth}%` }}>
         {isPreview ? (
-          <div
-            className="preview-container"
-            dangerouslySetInnerHTML={{ __html: htmlContent }}
-          />
+          <div className="preview-container" dangerouslySetInnerHTML={{ __html: htmlContent }} />
         ) : (
           <CodeEditor value={htmlContent} onChange={onCodeEditorChange}></CodeEditor>
         )}
